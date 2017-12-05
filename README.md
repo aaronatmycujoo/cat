@@ -14,7 +14,7 @@ cd cat
 yarn
 npm run dev
 chrome http://localhost:8080
-atom . # `nano app/app.js` amirite
+atom . # or `nano app/app.js` amirite
 ```
 
 Now edit away! 🎉
