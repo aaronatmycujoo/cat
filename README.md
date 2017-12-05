@@ -1,4 +1,4 @@
-# React Boilerplate
+# 🐱 
 
 A very simple React and JSX ready webpack config with hot reloading and all that babel goodness 😍
 
