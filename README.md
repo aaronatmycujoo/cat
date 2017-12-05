@@ -1,4 +1,4 @@
-# 🐱 
+# 🐱
 
 A very simple React and JSX ready webpack config with hot reloading and all that babel goodness 😍
 
@@ -13,7 +13,8 @@ git clone https://github.com/aaronatmycujoo/cat.git
 cd cat
 yarn
 npm run dev
-atom .
+chrome http://localhost:8080
+atom . # `nano app/app.js` amirite 
 ```
 
 Now edit away! 🎉
