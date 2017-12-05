@@ -14,7 +14,7 @@ cd cat
 yarn
 npm run dev
 chrome http://localhost:8080
-atom . # `nano app/app.js` amirite 
+atom . # `nano app/app.js` amirite
 ```
 
 Now edit away! 🎉
@@ -25,16 +25,18 @@ Now edit away! 🎉
 npm run build
 ```
 
+Upload the `./public/` anywhere and serve `index.html`.
+
 ### Express server
 
 #### Prerequisites
 
 - Building
 
-If you want to host it after it's been built and see what it's like, run
+If you want to host it locally after it's been built and see what it's like, run
 
 ```
 npm run start
 ```
 
-It will start an express server on some port (probably `6201`) whilst serving the build. Otherwise after building upload the `./public/` anywhere and serve the `index.html`.
+It will start an express server on some port (probably `6201`) whilst serving the `./public/` folder which the built should be in.
