@@ -38,3 +38,4 @@ node_modules
 
 # custom things
 public
+bundle-analysis-stats.json
