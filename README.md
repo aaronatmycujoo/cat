@@ -5,7 +5,7 @@ A very simple React and JSX ready webpack config with hot reloading and all that
 ## Prerequisites
 
 - node ^6
-- yarn # install it through `npm i yarn -g`
+- yarn (install it through `npm i yarn -g`)
 
 ## Setting up
 
