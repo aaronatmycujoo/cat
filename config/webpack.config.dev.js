@@ -7,12 +7,14 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const loaders = require('./loaders.js')
 
 module.exports = {
-  entry: [
-    'react-hot-loader/patch',
-    require.resolve('webpack-dev-server/client') + '?/', // eslint-disable-line prefer-template
-    require.resolve('webpack/hot/dev-server'),
-    './app/index.js'
-  ],
+  entry: {
+    index: [
+      'react-hot-loader/patch',
+      require.resolve('webpack-dev-server/client') + '?/', // eslint-disable-line prefer-template
+      require.resolve('webpack/hot/dev-server'),
+      './app/index.js'
+    ],
+  },
   output: {
     path: path.resolve(__dirname, '..', './public/'),
     pathinfo: true,
@@ -32,6 +34,7 @@ module.exports = {
       inject: true,
       template: './template/index.html',
     }),
+    new webpack.optimize.ModuleConcatenationPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new CaseSensitivePathsPlugin(),
     new webpack.NoEmitOnErrorsPlugin(),

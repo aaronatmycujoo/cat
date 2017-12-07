@@ -4,11 +4,14 @@
   "description": "meow",
   "main": "index.js",
   "scripts": {
-    "test": "echo 'lol'",
+    "test": "echo not yet",
+    "prestart": "npm run build",
     "start": "node index.js",
     "dev": "webpack-dev-server --config config/webpack.config.dev.js",
     "prebuild": "rimraf ./public",
-    "build": "webpack -p --config config/webpack.config.prod.js"
+    "build": "webpack --config config/webpack.config.prod.js --env.analyse=false",
+    "preanalysis": "rimraf ./public | rimraf bundle-analysis-stats.json",
+    "analyse": "webpack --config config/webpack.config.prod.js --env.analyse=true --profile --json > bundle-analysis-stats.json --env.environment=production"
   },
   "author": "",
   "license": "ISC",
@@ -42,6 +45,7 @@
   "dependencies": {
     "compression": "^1.6.2",
     "express": "^4.14.0",
-    "logfmt": "^1.2.0"
+    "logfmt": "^1.2.0",
+    "webpack-bundle-analyzer": "^2.9.1"
   }
 }
