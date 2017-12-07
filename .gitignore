@@ -35,3 +35,6 @@ Thumbs.db
 
 # node things
 node_modules
+
+# custom things
+public
