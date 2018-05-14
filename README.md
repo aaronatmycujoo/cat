@@ -13,7 +13,7 @@ A very simple React and JSX ready webpack config with hot reloading and all that
 git clone https://github.com/aaronatmycujoo/cat.git
 cd cat
 yarn
-npm run dev
+yarn dev
 chrome http://localhost:8080
 atom . # or `nano app/app.js` amirite
 ```
@@ -23,7 +23,7 @@ Now edit away! 🎉
 ## Building
 
 ```
-npm run build
+yarn build
 ```
 
 Upload the `./public/` anywhere and serve `index.html`.
@@ -31,14 +31,14 @@ Upload the `./public/` anywhere and serve `index.html`.
 ## Running the app in production mode
 
 ```
-npm run start
+yarn start
 ```
 
 It will build the application, then start an express server on some port (probably `6201`), whilst serving the `./public/` folder which the built should be in.
 
 ## Analysing
 
-`npm run analysis`
+`yarn analysis`
 
 It will build the production application, analyse it, and open the results in a browser. This graph will help you:
 
